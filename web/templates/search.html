@@ -1,0 +1,72 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+	<meta charset="utf-8">
+	<title>Your page title here :)</title>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" href="{% static 'css/normalize.css' %}">
+	<link rel="stylesheet" href="{% static 'css/skeleton.css' %}">
+
+</head>
+
+<body>
+	<div class="container" style="margin-top: 5%">
+		<h1>Euler's 4Square Client</h1>
+		<div class="row">
+			<div class="nine columns">
+			<form>
+				<div class="row">
+					<div class="four columns">
+						<input type="text" class="u-full-width" name="query" placeholder="I am looking for...">
+					</div>
+					<div class="four columns">
+						<input type="text" class="u-full-width" name="location" placeholder="Location">
+					</div>
+					<div class="four columns">
+						<input type="submit" class="button-primary" value="Search">
+					</div>
+				</div>
+			</form>
+
+			{% if results %}
+				<h5>Results</h5>
+				<table class="u-full-width">
+					<thead>
+						<tr>
+							<th>Name / Contact</th>
+							<th>Checkin Count</th>
+							<th>Location</th>
+						</tr>	
+					</thead>
+					<tbody>
+					{% for result in results.response.venues %}
+						<tr>
+							<td><b>{{ result.name }}</b> <br> {{ result.contact.formattedPhone }}</td>
+							<td>{{ result.stats.checkinsCount }}</td>
+							<td>{{ result.location.formattedAddress|join:", " }}</td>
+						</tr>
+					{% endfor %}
+					</tbody>
+				</table>
+			{% endif %}
+			</div>
+			<div class="three columns">
+				<h5>Previous Searches</h5>
+				<ol>
+				{% for entry in previous_searches %}
+					<li><a href="/?query={{ entry.query }}&location={{ entry.location }}">{{ entry }} ({{ entry.hits }} hits)</a></li>
+				{% empty %}
+   					<li>Sorry, no search entries.</li>
+				{% endfor %}
+				</ol>
+			</div>
+		</div>
+	</div>
+
+</body>
+</html>
