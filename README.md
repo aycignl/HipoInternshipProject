@@ -55,3 +55,15 @@ $ pip freeze > requirements.txt
 
 # Deployment
 This project deploys on [Heroku](https://hipoproject.herokuapp.com/)
+
+# References
+* http://tutorial.djangogirls.org/
+* https://docs.djangoproject.com/en/1.11/#first-steps
+* https://docs.djangoproject.com/en/1.11/topics/class-based-views/#
+* http://docs.python-requests.org/en/master/
+* https://developer.foursquare.com/docs/venues/search
+* https://developer.foursquare.com/overview/auth.html#userless
+* https://devcenter.heroku.com/articles/deploying-python
+* https://docs.djangoproject.com/en/1.11/ref/templates/builtins/#for-empty
+* http://getskeleton.com/
+* https://docs.python.org/3/library/urllib.request.html
