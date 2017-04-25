@@ -1,5 +1,6 @@
-# Foursquare Client Project: Euler's 4Square Client [@HIPO](https://hipolabs.com/).
-In this project, I need to build a Foursquare client using Django Framework.
+# Foursquare Client Project: Euler's 4Square Client
+In this project, I need to build a Foursquare client using Django Framework.<br>
+This project is prepared for [HIPO](https://hipolabs.com/).
 
 # Installation
 
@@ -53,4 +54,4 @@ $ pip freeze > requirements.txt
 ```
 
 # Deployment
-This project deploys on [@Heroku](https://hipoproject.herokuapp.com/)
+This project deploys on [Heroku](https://hipoproject.herokuapp.com/)
