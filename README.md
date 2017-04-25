@@ -51,3 +51,6 @@ Create a file which contains requirements of technical part(version).
 ```shell
 $ pip freeze > requirements.txt
 ```
+
+# Deployment
+This project deploys on [@Heroku](https://dashboard.heroku.com/apps/hipoproject)
