@@ -25,7 +25,7 @@ SECRET_KEY = '1rn1h!b!dlar_9f3)$wwnkh%ogzqgc9pb8or-d+6^^w87)2c__'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -120,7 +120,7 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 STATIC_ROOT = os.path.join(BASE_DIR, 'static')
- 
+
 
 FOURSQUARE_CLIENT_ID = 'V131V0IPODZOAI4DH0TXB0W1VF4R1QCAHASGHJI35D3KJLWK'
 FOURSQUARE_CLIENT_SECRET = 'L5RZFRA1K2KPH33H12BFD3MECOJKEBIJSLP14KXYRYW3A5AF'
