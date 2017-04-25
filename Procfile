@@ -1,1 +1,1 @@
-web: gunicorn hipoproject.wsgi
+web: gunicorn euler.wsgi
