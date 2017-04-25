@@ -53,4 +53,4 @@ $ pip freeze > requirements.txt
 ```
 
 # Deployment
-This project deploys on [@Heroku](https://dashboard.heroku.com/apps/hipoproject)
+This project deploys on [@Heroku](https://hipoproject.herokuapp.com/)
