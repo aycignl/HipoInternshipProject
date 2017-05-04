@@ -54,7 +54,7 @@ $ pip freeze > requirements.txt
 ```
 
 # Deployment
-This project deploys on [Heroku](https://hipoproject.herokuapp.com/)
+This project deploys on [PythonAnywhere](http://gonul.pythonanywhere.com/)
 
 # References
 * http://tutorial.djangogirls.org/
@@ -67,3 +67,4 @@ This project deploys on [Heroku](https://hipoproject.herokuapp.com/)
 * https://docs.djangoproject.com/en/1.11/ref/templates/builtins/#for-empty
 * http://getskeleton.com/
 * https://docs.python.org/3/library/urllib.request.html
+* https://tutorial.djangogirls.org/tr/deploy/
